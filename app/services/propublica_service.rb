@@ -4,7 +4,7 @@ class PropublicaService
   def initialize(state)
     @state = state
     @conn = Faraday.new(url: "https://api.propublica.org") do |faraday|
-      faraday.headers["X-API-Key"] = "fdNPARnonM6wRDBOnALZt7HlDXOg0S6i78tYj4Ir"
+      faraday.headers["X-API-Key"] = ""
       faraday.adapter  Faraday.default_adapter
     end
   end
